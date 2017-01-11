@@ -1,5 +1,5 @@
 # mocha-htmllint
-Runs htmlint as mocha tests
+Runs [htmlint](https://github.com/htmllint/htmllint) as [mocha](https://github.com/mochajs/mocha) tests.
 
 ## Install
 
@@ -8,6 +8,15 @@ $npm install mocha-htmllint --save-dev
 ```
 
 ## Usage
+
+### Syntax:
+``` javascript
+mochaHtmllint(patterns, options);
+```
+
+Where patterns is an array of [glob patterns](https://github.com/jpillora/node-glob-all) and options are an [htmllint options](https://github.com/htmllint/htmllint/wiki/Options) object.
+
+### Example:
 
 htmllint.spec.js
 ``` javascript
@@ -20,9 +29,7 @@ mochaHtmllint([
 });
 ```
 
-
 ## License
-
 MIT License
 
 Copyright (c) 2017 Jonatan Pedersen
