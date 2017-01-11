@@ -1,0 +1,31 @@
+{
+  "name": "mocha-htmllint",
+  "version": "0.0.0",
+  "description": "run htmllint as mocha tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "mocha",
+    "mochaplugin",
+    "htmllint"
+  ],
+  "author": "Jonatan Pedersen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatanpedersen/mocha-htmllint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonatanpedersen/mocha-htmllint/issues"
+  },
+  "homepage": "https://github.com/jonatanpedersen/mocha-htmllint#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "colors": "^1.1.2",
+    "glob-all": "^3.1.0",
+    "htmllint": "^0.5.0",
+    "mocha": "^3.2.0"
+  }
+}
