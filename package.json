@@ -1,6 +1,6 @@
 {
   "name": "mocha-htmllint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "run htmllint as mocha tests",
   "main": "index.js",
   "scripts": {
