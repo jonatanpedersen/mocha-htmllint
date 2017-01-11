@@ -1,0 +1,2 @@
+--reporter min
+./test/htmllint.spec.js
