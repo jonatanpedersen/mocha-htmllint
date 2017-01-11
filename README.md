@@ -4,7 +4,7 @@ Runs [htmllint](https://github.com/htmllint/htmllint) as [mocha](https://github.
 ## Install
 
 ``` bash
-$npm install mocha-htmllint --save-dev
+$ npm install mocha-htmllint --save-dev
 ```
 
 ## Usage
