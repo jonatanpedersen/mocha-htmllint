@@ -1,5 +1,5 @@
 # mocha-htmllint
-Runs [htmlint](https://github.com/htmllint/htmllint) as [mocha](https://github.com/mochajs/mocha) tests.
+Runs [htmllint](https://github.com/htmllint/htmllint) as [mocha](https://github.com/mochajs/mocha) tests.
 
 ## Install
 
