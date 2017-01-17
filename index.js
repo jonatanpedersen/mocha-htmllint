@@ -9,22 +9,26 @@ const textTable = require('text-table');
 module.exports = function (patterns, options) {
 	describe('htmllint', function () {
 		globAll.sync(patterns).forEach(function (file) {
-			it(`${file} should pass lint rules`, function(done) {
-				fs.readFile(file, 'utf8', function(err, html) {
-					htmllint(html, options, function(err, issues) {
-						if (err) {
-							return done(err);
-						}
+			describe(file, () => {
+				it(`should pass htmllint rules`, function(done) {
+					fs.readFile(file, 'utf8', function(err, html) {
+						htmllint(html, options, function(err, issues) {
+							if (err) {
+								return done(err);
+							}
 
-						if (issues && issues.length > 0) {
-							let message = chalk.red(`${file} did not pass lint rules\n`);
-							message += issuesTable(issues);
-							message += chalk.red.bold(`\n\n✖ ${issues.length} issues\n`);
+							if (issues && issues.length > 0) {
+								let message = chalk.white.underline(`\n${file} did not pass htmllint rules\n`);
+								message += issuesTable(issues);
+								message += chalk.red.bold(`\n\n✖ ${issues.length} ${issues.length === 1 ? 'issue' : 'issues'}\n`);
 
-							return done(new Error(message));
-						}
+								let error = new Error(message);
+								delete error.stack; // Yeah, I know, but we don't care about the stack here.
+								return done(error);
+							}
 
-						done();
+							done();
+						});
 					});
 				});
 			});
@@ -40,7 +44,7 @@ function issuesTable (issues) {
 				`line ${issue.line || 0}`,
 				`column ${issue.column || 0}`,
 				issue.code,
-				chalk.blue(htmllintMessages.renderIssue(issue) || JSON.stringify(issue.data)),
+				chalk.cyan(htmllintMessages.renderIssue(issue) || JSON.stringify(issue.data)),
 				chalk.white.bold(issue.rule)
 			]
 		}),

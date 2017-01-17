@@ -1,6 +1,8 @@
 # mocha-htmllint
 Runs [htmllint](https://github.com/htmllint/htmllint) as [mocha](https://github.com/mochajs/mocha) tests.
 
+![output](https://raw.githubusercontent.com/jonatanpedersen/mocha-htmllint/master/output.png)
+
 ## Install
 
 ``` bash
