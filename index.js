@@ -17,7 +17,7 @@ module.exports = function (patterns, options) {
 
 						if (issues && issues.length > 0) {
 							let message = `${chalk.red('HTML did not pass lint rules')}
-${issues.map(issue => `	${issue.line}:${issue.column} ${htmllintMessages.renderIssue(issue)}`).join('\n')}
+${issues.map(issue => `	${issue.line}:${issue.column} ${htmllintMessages.renderIssue(issue)}	${issue.rule}	(${JSON.stringify(issue.data)})`).join('\n')}
 `;
 
 							return done(new Error(message));
