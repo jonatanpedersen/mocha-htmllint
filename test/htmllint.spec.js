@@ -1,7 +1,10 @@
 const mochaHtmllint = require('../');
 
-mochaHtmllint([
-	'./test/files/**/*.html'
-], {
-	'line-end-style': false
+describe('mochaHtmllint', () => {
+	
+	mochaHtmllint([
+		'./test/files/**/*.html'
+	], {
+		'line-end-style': false
+	});
 });
