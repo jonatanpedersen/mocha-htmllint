@@ -2,6 +2,7 @@
 Runs [htmllint](https://github.com/htmllint/htmllint) as [mocha](https://github.com/mochajs/mocha) tests.
 
 [![Build Status](https://travis-ci.org/jonatanpedersen/mocha-htmllint.svg?branch=master)](https://travis-ci.org/jonatanpedersen/mocha-htmllint)
+[![Build Status](https://img.shields.io/npm/v/mocha-htmllint.svg)](https://www.npmjs.com/package/htmllint)
 
 ![output](https://raw.githubusercontent.com/jonatanpedersen/mocha-htmllint/master/output.png)
 
@@ -36,7 +37,7 @@ mochaHtmllint([
 ## License
 MIT License
 
-Copyright (c) 2017 Jonatan Pedersen
+Copyright (c) 2017 [Jonatan Pedersen](https://www.jonatanpedersen.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
