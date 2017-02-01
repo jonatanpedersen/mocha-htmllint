@@ -4,6 +4,8 @@
   "description": "run htmllint as mocha tests",
   "main": "index.js",
   "scripts": {
+    "postversion": "git push && git push --tags",
+    "preversion": "npm test",
     "test": "mocha"
   },
   "keywords": [
