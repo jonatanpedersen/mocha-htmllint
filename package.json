@@ -29,5 +29,8 @@
     "htmllint": "^0.6.0",
     "mocha": "^3.2.0",
     "text-table": "^0.2.0"
+  },
+  "engines": {
+    "node": ">=4"
   }
 }
