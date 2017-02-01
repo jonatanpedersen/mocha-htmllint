@@ -3,6 +3,7 @@ Runs [htmllint](https://github.com/htmllint/htmllint) as [mocha](https://github.
 
 [![Build Status](https://travis-ci.org/jonatanpedersen/mocha-htmllint.svg?branch=master)](https://travis-ci.org/jonatanpedersen/mocha-htmllint)
 [![Build Status](https://img.shields.io/npm/v/mocha-htmllint.svg)](https://www.npmjs.com/package/mocha-htmllint)
+[![NSP Status](https://nodesecurity.io/orgs/jonatanpedersen/projects/37c0d21c-3deb-4713-bf0e-3968988795b2/badge)](https://nodesecurity.io/orgs/jonatanpedersen/projects/37c0d21c-3deb-4713-bf0e-3968988795b2)
 
 ![output](https://raw.githubusercontent.com/jonatanpedersen/mocha-htmllint/master/output.png)
 
