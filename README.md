@@ -1,4 +1,6 @@
 # mocha-htmllint
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/jonatanpedersen/mocha-htmllint.svg)](https://greenkeeper.io/)
 Runs [htmllint](https://github.com/htmllint/htmllint) as [mocha](https://github.com/mochajs/mocha) tests.
 
 [![Build Status](https://travis-ci.org/jonatanpedersen/mocha-htmllint.svg?branch=master)](https://travis-ci.org/jonatanpedersen/mocha-htmllint)
