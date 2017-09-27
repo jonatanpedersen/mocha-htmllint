@@ -26,14 +26,15 @@
   "dependencies": {
     "chalk": "^2.1.0",
     "glob-all": "^3.1.0",
+    "strip-ansi": "^4.0.0",
     "text-table": "^0.2.0"
   },
   "peerDependencies": {
-    "htmllint": "0.5.0",
+    "htmllint": "0.x",
     "mocha": "3.x"
   },
   "devDependencies": {
-    "htmllint": "0.5.0",
+    "htmllint": "0.x",
     "mocha": "3.x"
   },
   "engines": {

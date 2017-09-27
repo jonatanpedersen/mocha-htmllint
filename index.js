@@ -4,6 +4,7 @@ const globAll = require('glob-all');
 const htmllint = require('htmllint');
 const htmllintMessages = require('htmllint/lib/messages');
 const mocha = require('mocha');
+const stripAnsi = require('strip-ansi');
 const textTable = require('text-table');
 
 module.exports = function (patterns, options) {
@@ -51,7 +52,7 @@ function issuesTable (issues) {
 		{
 			align: ['', 'r', 'l'],
 			stringLength: function (str) {
-				return chalk.stripColor(str).length;
+				return stripAnsi(str).length;
 			}
 		}
 	);
